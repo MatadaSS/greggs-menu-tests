@@ -1,0 +1,284 @@
+
+Running 186 tests using 1 worker
+
+  ✓    1 [desktop] › tests/menu-accessibility.spec.ts:6:7 › Menu: accessibility › axe scan: no critical WCAG 2.1 A/AA violations (all violations attached to report) (6.7s)
+  ✓    2 [desktop] › tests/menu-accessibility.spec.ts:16:7 › Menu: accessibility › page has one h1 and headings are not skipped (h1 then h2) (5.2s)
+  ✓    3 [desktop] › tests/menu-accessibility.spec.ts:22:7 › Menu: accessibility › search box and category tabs are reachable by keyboard (5.1s)
+  ✓    4 [desktop] › tests/menu-accessibility.spec.ts:35:7 › Menu: accessibility › search box has an accessible name (5.1s)
+  ✓    5 [desktop] › tests/menu-accessibility.spec.ts:52:7 › Menu: accessibility › axe scan of a product page: no critical violations (2.5s)
+  ✘    6 [desktop] › tests/menu-accessibility.spec.ts:58:7 › Menu: accessibility › axe scan of the open filter dialog: no critical violations (6.0s)
+  ✓    7 [desktop] › tests/menu-accessibility.spec.ts:69:7 › Menu: accessibility › filter dialog: focus moves into it and allergen options can be ticked with the keyboard (5.6s)
+  ✓    8 [desktop] › tests/menu-data.spec.ts:5:7 › Menu: data consistency › every product link has a name, a slug and a numeric id (5.1s)
+  ✓    9 [desktop] › tests/menu-data.spec.ts:14:7 › Menu: data consistency › no product appears twice within the same category (5.5s)
+  ✓   10 [desktop] › tests/menu-data.spec.ts:33:7 › Menu: data consistency › every product card has an image with alt text (5.6s)
+  ✓   11 [desktop] › tests/menu-data.spec.ts:44:7 › Menu: data consistency › card name matches the product page heading (sample of 5 products) (8.4s)
+  ✓   12 [desktop] › tests/menu-data.spec.ts:53:7 › Menu: data consistency › product page shows a nutrition table with energy in kcal (1.8s)
+  ✓   13 [desktop] › tests/menu-data.spec.ts:60:9 › Menu: data consistency › first product in "BREAKFAST" has a complete product page (6.5s)
+  ✓   14 [desktop] › tests/menu-data.spec.ts:60:9 › Menu: data consistency › first product in "SAVOURIES & BAKES" has a complete product page (5.8s)
+  ✓   15 [desktop] › tests/menu-data.spec.ts:60:9 › Menu: data consistency › first product in "DRINKS & SNACKS" has a complete product page (5.7s)
+  ✓   16 [desktop] › tests/menu-data.spec.ts:60:9 › Menu: data consistency › first product in "SANDWICHES & SALADS" has a complete product page (6.1s)
+  ✓   17 [desktop] › tests/menu-data.spec.ts:60:9 › Menu: data consistency › first product in "SWEET TREATS" has a complete product page (5.8s)
+  ✓   18 [desktop] › tests/menu-data.spec.ts:60:9 › Menu: data consistency › first product in "HOT FOOD" has a complete product page (5.8s)
+  ✓   19 [desktop] › tests/menu-filters.spec.ts:5:7 › Menu: filters (calories and allergens) › filter dialog opens and shows calories, all 11 allergens and categories (6.0s)
+  ✓   20 [desktop] › tests/menu-filters.spec.ts:19:7 › Menu: filters (calories and allergens) › dialog closes with Back, the close button and Escape (7.7s)
+  ✓   21 [desktop] › tests/menu-filters.spec.ts:35:7 › Menu: filters (calories and allergens) › an allergen filter reduces the list, shows a chip, and removing it restores everything (6.4s)
+  ✓   22 [desktop] › tests/menu-filters.spec.ts:47:9 › Menu: filters (calories and allergens) › DATA CORRECTNESS: with "No Wheat" applied, products really do not list Wheat (sample of 4) (8.7s)
+  ✓   23 [desktop] › tests/menu-filters.spec.ts:47:9 › Menu: filters (calories and allergens) › DATA CORRECTNESS: with "No Eggs" applied, products really do not list Eggs (sample of 4) (9.5s)
+  ✓   24 [desktop] › tests/menu-filters.spec.ts:59:7 › Menu: filters (calories and allergens) › combining two allergen filters never shows more products than one alone (7.2s)
+  ✓   25 [desktop] › tests/menu-filters.spec.ts:69:7 › Menu: filters (calories and allergens) › calorie slider narrows the list, and shown products are at or under the limit (sample of 3) (7.7s)
+  ✓   26 [desktop] › tests/menu-filters.spec.ts:86:7 › Menu: filters (calories and allergens) › selected filters are remembered when the dialog is reopened, and Clear all resets them (7.2s)
+  ✓   27 [desktop] › tests/menu-filters.spec.ts:98:7 › Menu: filters (calories and allergens) › DATA CONSISTENCY: category counts in the filter dialog match the real lists and add up to the total (11.6s)
+  ✓   28 [desktop] › tests/menu-header-nav.spec.ts:19:7 › Menu: header "Menu & allergens" navigation › menu links list every category, View all products and Allergens & Nutrition (5.7s)
+  ✓   29 [desktop] › tests/menu-header-nav.spec.ts:30:7 › Menu: header "Menu & allergens" navigation › choosing a category from the header opens that category (8.1s)
+  ✓   30 [desktop] › tests/menu-header-nav.spec.ts:39:7 › Menu: header "Menu & allergens" navigation › "Allergens & Nutrition" page loads (2.0s)
+  ✓   31 [desktop] › tests/menu-header-nav.spec.ts:46:7 › Menu: header "Menu & allergens" navigation › logo returns to the homepage from the menu (5.2s)
+  ✓   32 [desktop] › tests/menu-navigation.spec.ts:5:7 › Menu: categories and navigation › landing page shows heading, all 6 categories and products (5.2s)
+  ✓   33 [desktop] › tests/menu-navigation.spec.ts:15:9 › Menu: categories and navigation › category tab "BREAKFAST" filters the list and updates the URL (5.1s)
+  ✓   34 [desktop] › tests/menu-navigation.spec.ts:15:9 › Menu: categories and navigation › category tab "SAVOURIES & BAKES" filters the list and updates the URL (5.5s)
+  ✓   35 [desktop] › tests/menu-navigation.spec.ts:15:9 › Menu: categories and navigation › category tab "DRINKS & SNACKS" filters the list and updates the URL (5.3s)
+  ✓   36 [desktop] › tests/menu-navigation.spec.ts:15:9 › Menu: categories and navigation › category tab "SANDWICHES & SALADS" filters the list and updates the URL (5.6s)
+  ✓   37 [desktop] › tests/menu-navigation.spec.ts:15:9 › Menu: categories and navigation › category tab "SWEET TREATS" filters the list and updates the URL (5.3s)
+  ✓   38 [desktop] › tests/menu-navigation.spec.ts:15:9 › Menu: categories and navigation › category tab "HOT FOOD" filters the list and updates the URL (5.2s)
+  ✓   39 [desktop] › tests/menu-navigation.spec.ts:28:7 › Menu: categories and navigation › deep link /menu?category=... opens that category directly (5.6s)
+  ✓   40 [desktop] › tests/menu-navigation.spec.ts:34:7 › Menu: categories and navigation › "ALL" tab restores every category after filtering (5.7s)
+  ✓   41 [desktop] › tests/menu-navigation.spec.ts:43:7 › Menu: categories and navigation › clicking a product opens its detail page, and Back returns to the menu (10.0s)
+  ✓   42 [desktop] › tests/menu-navigation.spec.ts:55:7 › Menu: categories and navigation › unknown product URL returns a 404 page (1.9s)
+[desktop] perf { domContentLoadedMs: 1304, lcpMs: 1376, cls: 0.017 }
+  ✓   43 [desktop] › tests/menu-performance.spec.ts:24:7 › Menu: performance › load time and Largest Contentful Paint are within budget (6.7s)
+[desktop] cls 0.017
+  ✓   44 [desktop] › tests/menu-performance.spec.ts:32:7 › Menu: performance › layout shift (CLS) is within budget (7.0s)
+  ✓   45 [desktop] › tests/menu-performance.spec.ts:42:7 › Menu: performance › no same-site requests fail (4xx/5xx) while loading the menu (8.7s)
+  ✓   46 [desktop] › tests/menu-performance.spec.ts:52:7 › Menu: performance › category filtering responds quickly (no full reload needed) (5.3s)
+  ✓   47 [desktop] › tests/menu-search.spec.ts:5:7 › Menu: search › typing a term narrows results to matching products (5.0s)
+  ✓   48 [desktop] › tests/menu-search.spec.ts:15:7 › Menu: search › search is case-insensitive (5.7s)
+  ✓   49 [desktop] › tests/menu-search.spec.ts:21:7 › Menu: search › a term with no matches shows a friendly empty state (5.3s)
+  ✓   50 [desktop] › tests/menu-search.spec.ts:28:7 › Menu: search › clearing the search brings the full menu back (5.4s)
+  ✓   51 [desktop] › tests/menu-ui.spec.ts:5:7 › Menu: UI rendering and responsiveness › core elements are visible: search, filter and category tabs (13.0s)
+  ✓   52 [desktop] › tests/menu-ui.spec.ts:15:7 › Menu: UI rendering and responsiveness › page does not scroll sideways at this viewport (5.3s)
+  ✓   53 [desktop] › tests/menu-ui.spec.ts:21:7 › Menu: UI rendering and responsiveness › product images actually load (not broken) (5.4s)
+  ✓   54 [desktop] › tests/menu-ui.spec.ts:36:7 › Menu: UI rendering and responsiveness › product grid adapts to screen width (more columns on desktop than mobile) (5.0s)
+  ✓   55 [desktop] › tests/menu-ui.spec.ts:47:7 › Menu: UI rendering and responsiveness › cookie banner can be rejected and stays dismissed on reload (7.8s)
+  ✘   56 [desktop] › tests/negative-controls.spec.ts:14:7 › Negative controls: do our checks actually catch problems? › missing alt text WOULD be caught (5.5s)
+  ✘   57 [desktop] › tests/negative-controls.spec.ts:24:7 › Negative controls: do our checks actually catch problems? › broken product images WOULD be caught (10.0s)
+  ✘   58 [desktop] › tests/negative-controls.spec.ts:33:7 › Negative controls: do our checks actually catch problems? › a fake 200 on an unknown product URL WOULD be caught (111ms)
+  ✘   59 [desktop] › tests/negative-controls.spec.ts:40:7 › Negative controls: do our checks actually catch problems? › a product that lists the filtered allergen WOULD be caught (8.5s)
+  ✘   60 [desktop] › tests/negative-controls.spec.ts:49:7 › Negative controls: do our checks actually catch problems? › a wrong category count in the filter dialog WOULD be caught (6.4s)
+  ✘   61 [desktop] › tests/negative-controls.spec.ts:61:7 › Negative controls: do our checks actually catch problems? › search that ignores the term WOULD be caught (5.0s)
+  ✘   62 [desktop] › tests/negative-controls.spec.ts:70:7 › Negative controls: do our checks actually catch problems? › a page that is too slow WOULD be caught by the performance budget (20.2s)
+  ✓   63 [mobile] › tests/menu-accessibility.spec.ts:6:7 › Menu: accessibility › axe scan: no critical WCAG 2.1 A/AA violations (all violations attached to report) (6.4s)
+  ✘   64 [mobile] › tests/menu-accessibility.spec.ts:16:7 › Menu: accessibility › page has one h1 and headings are not skipped (h1 then h2) (16.6s)
+  ✓   65 [mobile] › tests/menu-accessibility.spec.ts:16:7 › Menu: accessibility › page has one h1 and headings are not skipped (h1 then h2) (retry #1) (5.3s)
+  -   66 [mobile] › tests/menu-accessibility.spec.ts:22:7 › Menu: accessibility › search box and category tabs are reachable by keyboard
+  ✘   67 [mobile] › tests/menu-accessibility.spec.ts:35:7 › Menu: accessibility › search box has an accessible name (17.4s)
+  ✓   68 [mobile] › tests/menu-accessibility.spec.ts:35:7 › Menu: accessibility › search box has an accessible name (retry #1) (13.9s)
+  ✓   69 [mobile] › tests/menu-accessibility.spec.ts:52:7 › Menu: accessibility › axe scan of a product page: no critical violations (2.4s)
+  ✘   70 [mobile] › tests/menu-accessibility.spec.ts:58:7 › Menu: accessibility › axe scan of the open filter dialog: no critical violations (15.7s)
+  -   71 [mobile] › tests/menu-accessibility.spec.ts:69:7 › Menu: accessibility › filter dialog: focus moves into it and allergen options can be ticked with the keyboard
+  ✓   72 [mobile] › tests/menu-data.spec.ts:5:7 › Menu: data consistency › every product link has a name, a slug and a numeric id (5.1s)
+  ✓   73 [mobile] › tests/menu-data.spec.ts:14:7 › Menu: data consistency › no product appears twice within the same category (5.0s)
+  ✓   74 [mobile] › tests/menu-data.spec.ts:33:7 › Menu: data consistency › every product card has an image with alt text (5.1s)
+  ✓   75 [mobile] › tests/menu-data.spec.ts:44:7 › Menu: data consistency › card name matches the product page heading (sample of 5 products) (7.7s)
+  ✓   76 [mobile] › tests/menu-data.spec.ts:53:7 › Menu: data consistency › product page shows a nutrition table with energy in kcal (1.7s)
+  ✓   77 [mobile] › tests/menu-data.spec.ts:60:9 › Menu: data consistency › first product in "BREAKFAST" has a complete product page (5.8s)
+  ✓   78 [mobile] › tests/menu-data.spec.ts:60:9 › Menu: data consistency › first product in "SAVOURIES & BAKES" has a complete product page (5.7s)
+  ✓   79 [mobile] › tests/menu-data.spec.ts:60:9 › Menu: data consistency › first product in "DRINKS & SNACKS" has a complete product page (6.1s)
+  ✓   80 [mobile] › tests/menu-data.spec.ts:60:9 › Menu: data consistency › first product in "SANDWICHES & SALADS" has a complete product page (5.7s)
+  ✓   81 [mobile] › tests/menu-data.spec.ts:60:9 › Menu: data consistency › first product in "SWEET TREATS" has a complete product page (6.2s)
+  ✓   82 [mobile] › tests/menu-data.spec.ts:60:9 › Menu: data consistency › first product in "HOT FOOD" has a complete product page (7.2s)
+  ✓   83 [mobile] › tests/menu-filters.spec.ts:5:7 › Menu: filters (calories and allergens) › filter dialog opens and shows calories, all 11 allergens and categories (6.0s)
+  -   84 [mobile] › tests/menu-filters.spec.ts:19:7 › Menu: filters (calories and allergens) › dialog closes with Back, the close button and Escape
+  ✓   85 [mobile] › tests/menu-filters.spec.ts:35:7 › Menu: filters (calories and allergens) › an allergen filter reduces the list, shows a chip, and removing it restores everything (6.4s)
+  ✓   86 [mobile] › tests/menu-filters.spec.ts:47:9 › Menu: filters (calories and allergens) › DATA CORRECTNESS: with "No Wheat" applied, products really do not list Wheat (sample of 4) (8.5s)
+  ✓   87 [mobile] › tests/menu-filters.spec.ts:47:9 › Menu: filters (calories and allergens) › DATA CORRECTNESS: with "No Eggs" applied, products really do not list Eggs (sample of 4) (7.6s)
+  ✓   88 [mobile] › tests/menu-filters.spec.ts:59:7 › Menu: filters (calories and allergens) › combining two allergen filters never shows more products than one alone (7.4s)
+  ✓   89 [mobile] › tests/menu-filters.spec.ts:69:7 › Menu: filters (calories and allergens) › calorie slider narrows the list, and shown products are at or under the limit (sample of 3) (7.4s)
+  ✓   90 [mobile] › tests/menu-filters.spec.ts:86:7 › Menu: filters (calories and allergens) › selected filters are remembered when the dialog is reopened, and Clear all resets them (7.7s)
+  ✓   91 [mobile] › tests/menu-filters.spec.ts:98:7 › Menu: filters (calories and allergens) › DATA CONSISTENCY: category counts in the filter dialog match the real lists and add up to the total (11.4s)
+  ✓   92 [mobile] › tests/menu-header-nav.spec.ts:19:7 › Menu: header "Menu & allergens" navigation › menu links list every category, View all products and Allergens & Nutrition (6.4s)
+  ✓   93 [mobile] › tests/menu-header-nav.spec.ts:30:7 › Menu: header "Menu & allergens" navigation › choosing a category from the header opens that category (8.5s)
+  ✓   94 [mobile] › tests/menu-header-nav.spec.ts:39:7 › Menu: header "Menu & allergens" navigation › "Allergens & Nutrition" page loads (2.1s)
+  ✓   95 [mobile] › tests/menu-header-nav.spec.ts:46:7 › Menu: header "Menu & allergens" navigation › logo returns to the homepage from the menu (6.6s)
+  ✓   96 [mobile] › tests/menu-navigation.spec.ts:5:7 › Menu: categories and navigation › landing page shows heading, all 6 categories and products (5.8s)
+  ✓   97 [mobile] › tests/menu-navigation.spec.ts:15:9 › Menu: categories and navigation › category tab "BREAKFAST" filters the list and updates the URL (5.2s)
+  ✓   98 [mobile] › tests/menu-navigation.spec.ts:15:9 › Menu: categories and navigation › category tab "SAVOURIES & BAKES" filters the list and updates the URL (6.0s)
+  ✓   99 [mobile] › tests/menu-navigation.spec.ts:15:9 › Menu: categories and navigation › category tab "DRINKS & SNACKS" filters the list and updates the URL (5.2s)
+  ✓  100 [mobile] › tests/menu-navigation.spec.ts:15:9 › Menu: categories and navigation › category tab "SANDWICHES & SALADS" filters the list and updates the URL (5.2s)
+  ✓  101 [mobile] › tests/menu-navigation.spec.ts:15:9 › Menu: categories and navigation › category tab "SWEET TREATS" filters the list and updates the URL (6.7s)
+  ✓  102 [mobile] › tests/menu-navigation.spec.ts:15:9 › Menu: categories and navigation › category tab "HOT FOOD" filters the list and updates the URL (5.9s)
+  ✓  103 [mobile] › tests/menu-navigation.spec.ts:28:7 › Menu: categories and navigation › deep link /menu?category=... opens that category directly (5.5s)
+  ✓  104 [mobile] › tests/menu-navigation.spec.ts:34:7 › Menu: categories and navigation › "ALL" tab restores every category after filtering (5.5s)
+  ✓  105 [mobile] › tests/menu-navigation.spec.ts:43:7 › Menu: categories and navigation › clicking a product opens its detail page, and Back returns to the menu (7.1s)
+  ✓  106 [mobile] › tests/menu-navigation.spec.ts:55:7 › Menu: categories and navigation › unknown product URL returns a 404 page (1.6s)
+[mobile] perf { domContentLoadedMs: 1246, lcpMs: 652, cls: 0.14 }
+  ✓  107 [mobile] › tests/menu-performance.spec.ts:24:7 › Menu: performance › load time and Largest Contentful Paint are within budget (6.7s)
+[mobile] cls 0.14
+  ✓  108 [mobile] › tests/menu-performance.spec.ts:32:7 › Menu: performance › layout shift (CLS) is within budget (6.7s)
+  ✓  109 [mobile] › tests/menu-performance.spec.ts:42:7 › Menu: performance › no same-site requests fail (4xx/5xx) while loading the menu (5.4s)
+  ✓  110 [mobile] › tests/menu-performance.spec.ts:52:7 › Menu: performance › category filtering responds quickly (no full reload needed) (5.1s)
+  ✓  111 [mobile] › tests/menu-search.spec.ts:5:7 › Menu: search › typing a term narrows results to matching products (5.1s)
+  ✓  112 [mobile] › tests/menu-search.spec.ts:15:7 › Menu: search › search is case-insensitive (5.6s)
+  ✓  113 [mobile] › tests/menu-search.spec.ts:21:7 › Menu: search › a term with no matches shows a friendly empty state (5.4s)
+  ✓  114 [mobile] › tests/menu-search.spec.ts:28:7 › Menu: search › clearing the search brings the full menu back (5.1s)
+  ✓  115 [mobile] › tests/menu-ui.spec.ts:5:7 › Menu: UI rendering and responsiveness › core elements are visible: search, filter and category tabs (6.4s)
+  ✓  116 [mobile] › tests/menu-ui.spec.ts:15:7 › Menu: UI rendering and responsiveness › page does not scroll sideways at this viewport (5.3s)
+  ✓  117 [mobile] › tests/menu-ui.spec.ts:21:7 › Menu: UI rendering and responsiveness › product images actually load (not broken) (6.0s)
+  ✓  118 [mobile] › tests/menu-ui.spec.ts:36:7 › Menu: UI rendering and responsiveness › product grid adapts to screen width (more columns on desktop than mobile) (5.3s)
+  ✓  119 [mobile] › tests/menu-ui.spec.ts:47:7 › Menu: UI rendering and responsiveness › cookie banner can be rejected and stays dismissed on reload (7.6s)
+  -  120 [mobile] › tests/negative-controls.spec.ts:14:7 › Negative controls: do our checks actually catch problems? › missing alt text WOULD be caught
+  -  121 [mobile] › tests/negative-controls.spec.ts:24:7 › Negative controls: do our checks actually catch problems? › broken product images WOULD be caught
+  -  122 [mobile] › tests/negative-controls.spec.ts:33:7 › Negative controls: do our checks actually catch problems? › a fake 200 on an unknown product URL WOULD be caught
+  -  123 [mobile] › tests/negative-controls.spec.ts:40:7 › Negative controls: do our checks actually catch problems? › a product that lists the filtered allergen WOULD be caught
+  -  124 [mobile] › tests/negative-controls.spec.ts:49:7 › Negative controls: do our checks actually catch problems? › a wrong category count in the filter dialog WOULD be caught
+  -  125 [mobile] › tests/negative-controls.spec.ts:61:7 › Negative controls: do our checks actually catch problems? › search that ignores the term WOULD be caught
+  -  126 [mobile] › tests/negative-controls.spec.ts:70:7 › Negative controls: do our checks actually catch problems? › a page that is too slow WOULD be caught by the performance budget
+  ✓  127 [tablet] › tests/menu-accessibility.spec.ts:6:7 › Menu: accessibility › axe scan: no critical WCAG 2.1 A/AA violations (all violations attached to report) (6.0s)
+  ✓  128 [tablet] › tests/menu-accessibility.spec.ts:16:7 › Menu: accessibility › page has one h1 and headings are not skipped (h1 then h2) (5.0s)
+  ✓  129 [tablet] › tests/menu-accessibility.spec.ts:22:7 › Menu: accessibility › search box and category tabs are reachable by keyboard (5.1s)
+  ✓  130 [tablet] › tests/menu-accessibility.spec.ts:35:7 › Menu: accessibility › search box has an accessible name (5.3s)
+  ✓  131 [tablet] › tests/menu-accessibility.spec.ts:52:7 › Menu: accessibility › axe scan of a product page: no critical violations (2.4s)
+  ✘  132 [tablet] › tests/menu-accessibility.spec.ts:58:7 › Menu: accessibility › axe scan of the open filter dialog: no critical violations (6.3s)
+  ✓  133 [tablet] › tests/menu-accessibility.spec.ts:69:7 › Menu: accessibility › filter dialog: focus moves into it and allergen options can be ticked with the keyboard (5.5s)
+  ✓  134 [tablet] › tests/menu-data.spec.ts:5:7 › Menu: data consistency › every product link has a name, a slug and a numeric id (8.8s)
+  ✓  135 [tablet] › tests/menu-data.spec.ts:14:7 › Menu: data consistency › no product appears twice within the same category (5.5s)
+  ✓  136 [tablet] › tests/menu-data.spec.ts:33:7 › Menu: data consistency › every product card has an image with alt text (5.1s)
+  ✓  137 [tablet] › tests/menu-data.spec.ts:44:7 › Menu: data consistency › card name matches the product page heading (sample of 5 products) (7.9s)
+  ✓  138 [tablet] › tests/menu-data.spec.ts:53:7 › Menu: data consistency › product page shows a nutrition table with energy in kcal (1.6s)
+  ✓  139 [tablet] › tests/menu-data.spec.ts:60:9 › Menu: data consistency › first product in "BREAKFAST" has a complete product page (7.6s)
+  ✓  140 [tablet] › tests/menu-data.spec.ts:60:9 › Menu: data consistency › first product in "SAVOURIES & BAKES" has a complete product page (5.7s)
+  ✓  141 [tablet] › tests/menu-data.spec.ts:60:9 › Menu: data consistency › first product in "DRINKS & SNACKS" has a complete product page (5.5s)
+  ✓  142 [tablet] › tests/menu-data.spec.ts:60:9 › Menu: data consistency › first product in "SANDWICHES & SALADS" has a complete product page (6.0s)
+  ✓  143 [tablet] › tests/menu-data.spec.ts:60:9 › Menu: data consistency › first product in "SWEET TREATS" has a complete product page (6.4s)
+  ✓  144 [tablet] › tests/menu-data.spec.ts:60:9 › Menu: data consistency › first product in "HOT FOOD" has a complete product page (6.4s)
+  ✓  145 [tablet] › tests/menu-filters.spec.ts:5:7 › Menu: filters (calories and allergens) › filter dialog opens and shows calories, all 11 allergens and categories (5.8s)
+  ✓  146 [tablet] › tests/menu-filters.spec.ts:19:7 › Menu: filters (calories and allergens) › dialog closes with Back, the close button and Escape (8.8s)
+  ✓  147 [tablet] › tests/menu-filters.spec.ts:35:7 › Menu: filters (calories and allergens) › an allergen filter reduces the list, shows a chip, and removing it restores everything (6.9s)
+  ✓  148 [tablet] › tests/menu-filters.spec.ts:47:9 › Menu: filters (calories and allergens) › DATA CORRECTNESS: with "No Wheat" applied, products really do not list Wheat (sample of 4) (8.4s)
+  ✓  149 [tablet] › tests/menu-filters.spec.ts:47:9 › Menu: filters (calories and allergens) › DATA CORRECTNESS: with "No Eggs" applied, products really do not list Eggs (sample of 4) (8.6s)
+  ✓  150 [tablet] › tests/menu-filters.spec.ts:59:7 › Menu: filters (calories and allergens) › combining two allergen filters never shows more products than one alone (7.4s)
+  ✓  151 [tablet] › tests/menu-filters.spec.ts:69:7 › Menu: filters (calories and allergens) › calorie slider narrows the list, and shown products are at or under the limit (sample of 3) (7.8s)
+  ✓  152 [tablet] › tests/menu-filters.spec.ts:86:7 › Menu: filters (calories and allergens) › selected filters are remembered when the dialog is reopened, and Clear all resets them (7.0s)
+  ✓  153 [tablet] › tests/menu-filters.spec.ts:98:7 › Menu: filters (calories and allergens) › DATA CONSISTENCY: category counts in the filter dialog match the real lists and add up to the total (11.0s)
+  ✓  154 [tablet] › tests/menu-header-nav.spec.ts:19:7 › Menu: header "Menu & allergens" navigation › menu links list every category, View all products and Allergens & Nutrition (5.7s)
+  ✓  155 [tablet] › tests/menu-header-nav.spec.ts:30:7 › Menu: header "Menu & allergens" navigation › choosing a category from the header opens that category (8.3s)
+  ✓  156 [tablet] › tests/menu-header-nav.spec.ts:39:7 › Menu: header "Menu & allergens" navigation › "Allergens & Nutrition" page loads (1.7s)
+  ✓  157 [tablet] › tests/menu-header-nav.spec.ts:46:7 › Menu: header "Menu & allergens" navigation › logo returns to the homepage from the menu (6.0s)
+  ✓  158 [tablet] › tests/menu-navigation.spec.ts:5:7 › Menu: categories and navigation › landing page shows heading, all 6 categories and products (5.2s)
+  ✓  159 [tablet] › tests/menu-navigation.spec.ts:15:9 › Menu: categories and navigation › category tab "BREAKFAST" filters the list and updates the URL (5.4s)
+  ✓  160 [tablet] › tests/menu-navigation.spec.ts:15:9 › Menu: categories and navigation › category tab "SAVOURIES & BAKES" filters the list and updates the URL (5.3s)
+  ✓  161 [tablet] › tests/menu-navigation.spec.ts:15:9 › Menu: categories and navigation › category tab "DRINKS & SNACKS" filters the list and updates the URL (6.3s)
+  ✓  162 [tablet] › tests/menu-navigation.spec.ts:15:9 › Menu: categories and navigation › category tab "SANDWICHES & SALADS" filters the list and updates the URL (5.5s)
+  ✓  163 [tablet] › tests/menu-navigation.spec.ts:15:9 › Menu: categories and navigation › category tab "SWEET TREATS" filters the list and updates the URL (5.6s)
+  ✓  164 [tablet] › tests/menu-navigation.spec.ts:15:9 › Menu: categories and navigation › category tab "HOT FOOD" filters the list and updates the URL (5.4s)
+  ✓  165 [tablet] › tests/menu-navigation.spec.ts:28:7 › Menu: categories and navigation › deep link /menu?category=... opens that category directly (5.4s)
+  ✓  166 [tablet] › tests/menu-navigation.spec.ts:34:7 › Menu: categories and navigation › "ALL" tab restores every category after filtering (5.8s)
+  ✓  167 [tablet] › tests/menu-navigation.spec.ts:43:7 › Menu: categories and navigation › clicking a product opens its detail page, and Back returns to the menu (7.0s)
+  ✓  168 [tablet] › tests/menu-navigation.spec.ts:55:7 › Menu: categories and navigation › unknown product URL returns a 404 page (1.4s)
+[tablet] perf { domContentLoadedMs: 863, lcpMs: 932, cls: 0.386 }
+  ✓  169 [tablet] › tests/menu-performance.spec.ts:24:7 › Menu: performance › load time and Largest Contentful Paint are within budget (6.2s)
+[tablet] cls 0.386
+  ✘  170 [tablet] › tests/menu-performance.spec.ts:32:7 › Menu: performance › layout shift (CLS) is within budget (7.0s)
+  ✓  171 [tablet] › tests/menu-performance.spec.ts:42:7 › Menu: performance › no same-site requests fail (4xx/5xx) while loading the menu (5.2s)
+  ✓  172 [tablet] › tests/menu-performance.spec.ts:52:7 › Menu: performance › category filtering responds quickly (no full reload needed) (5.0s)
+  ✓  173 [tablet] › tests/menu-search.spec.ts:5:7 › Menu: search › typing a term narrows results to matching products (5.2s)
+  ✓  174 [tablet] › tests/menu-search.spec.ts:15:7 › Menu: search › search is case-insensitive (5.0s)
+  ✓  175 [tablet] › tests/menu-search.spec.ts:21:7 › Menu: search › a term with no matches shows a friendly empty state (5.1s)
+  ✓  176 [tablet] › tests/menu-search.spec.ts:28:7 › Menu: search › clearing the search brings the full menu back (5.0s)
+  ✓  177 [tablet] › tests/menu-ui.spec.ts:5:7 › Menu: UI rendering and responsiveness › core elements are visible: search, filter and category tabs (5.6s)
+  ✓  178 [tablet] › tests/menu-ui.spec.ts:15:7 › Menu: UI rendering and responsiveness › page does not scroll sideways at this viewport (5.1s)
+  ✓  179 [tablet] › tests/menu-ui.spec.ts:21:7 › Menu: UI rendering and responsiveness › product images actually load (not broken) (5.3s)
+  ✓  180 [tablet] › tests/menu-ui.spec.ts:36:7 › Menu: UI rendering and responsiveness › product grid adapts to screen width (more columns on desktop than mobile) (5.3s)
+  ✓  181 [tablet] › tests/menu-ui.spec.ts:47:7 › Menu: UI rendering and responsiveness › cookie banner can be rejected and stays dismissed on reload (8.1s)
+  -  182 [tablet] › tests/negative-controls.spec.ts:14:7 › Negative controls: do our checks actually catch problems? › missing alt text WOULD be caught
+  -  183 [tablet] › tests/negative-controls.spec.ts:24:7 › Negative controls: do our checks actually catch problems? › broken product images WOULD be caught
+  -  184 [tablet] › tests/negative-controls.spec.ts:33:7 › Negative controls: do our checks actually catch problems? › a fake 200 on an unknown product URL WOULD be caught
+  -  185 [tablet] › tests/negative-controls.spec.ts:40:7 › Negative controls: do our checks actually catch problems? › a product that lists the filtered allergen WOULD be caught
+  -  186 [tablet] › tests/negative-controls.spec.ts:49:7 › Negative controls: do our checks actually catch problems? › a wrong category count in the filter dialog WOULD be caught
+  -  187 [tablet] › tests/negative-controls.spec.ts:61:7 › Negative controls: do our checks actually catch problems? › search that ignores the term WOULD be caught
+  -  188 [tablet] › tests/negative-controls.spec.ts:70:7 › Negative controls: do our checks actually catch problems? › a page that is too slow WOULD be caught by the performance budget
+
+
+  1) [mobile] › tests/menu-accessibility.spec.ts:16:7 › Menu: accessibility › page has one h1 and headings are not skipped (h1 then h2) 
+
+    Error: expect(locator).toBeVisible() failed
+
+    Locator: locator('a[href*="/menu/product/"]').first()
+    Expected: visible
+    Timeout: 10000ms
+    Error: element(s) not found
+
+    Call log:
+      - Expect "toBeVisible" locator('a[href*="/menu/product/"]').first() with timeout 10000ms
+      - waiting for locator('a[href*="/menu/product/"]').first()
+
+
+       at support/menu.ts:30
+
+      28 |   await dismissCookies(page);
+      29 |   await expect(page.getByRole('heading', { level: 1 })).toContainText('OUR MENU');
+    > 30 |   await expect(page.locator(PRODUCT_LINK).first()).toBeVisible();
+         |                                                    ^
+      31 | }
+      32 |
+      33 | /** Tab buttons are uppercase via CSS only; their accessible names are e.g. "Breakfast". */
+        at openMenu (<project>/tests/support/menu.ts:30:52)
+        at <project>/tests/menu-accessibility.spec.ts:17:5
+
+    attachment #1: screenshot (image/png) ──────────────────────────────────────────────────────────
+    reports/artifacts/menu-accessibility-Menu-ac-58760-are-not-skipped-h1-then-h2--mobile/test-failed-1.png
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+    Error Context: reports/artifacts/menu-accessibility-Menu-ac-58760-are-not-skipped-h1-then-h2--mobile/error-context.md
+
+    attachment #3: trace (application/zip) ─────────────────────────────────────────────────────────
+    reports/artifacts/menu-accessibility-Menu-ac-58760-are-not-skipped-h1-then-h2--mobile/trace.zip
+    Usage:
+
+        npx playwright show-trace reports/artifacts/menu-accessibility-Menu-ac-58760-are-not-skipped-h1-then-h2--mobile/trace.zip
+
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+  2) [mobile] › tests/menu-accessibility.spec.ts:35:7 › Menu: accessibility › search box has an accessible name 
+
+    Error: expect(locator).toBeVisible() failed
+
+    Locator: locator('a[href*="/menu/product/"]').first()
+    Expected: visible
+    Timeout: 10000ms
+    Error: element(s) not found
+
+    Call log:
+      - Expect "toBeVisible" locator('a[href*="/menu/product/"]').first() with timeout 10000ms
+      - waiting for locator('a[href*="/menu/product/"]').first()
+
+
+       at support/menu.ts:30
+
+      28 |   await dismissCookies(page);
+      29 |   await expect(page.getByRole('heading', { level: 1 })).toContainText('OUR MENU');
+    > 30 |   await expect(page.locator(PRODUCT_LINK).first()).toBeVisible();
+         |                                                    ^
+      31 | }
+      32 |
+      33 | /** Tab buttons are uppercase via CSS only; their accessible names are e.g. "Breakfast". */
+        at openMenu (<project>/tests/support/menu.ts:30:52)
+        at <project>/tests/menu-accessibility.spec.ts:36:5
+
+    attachment #1: screenshot (image/png) ──────────────────────────────────────────────────────────
+    reports/artifacts/menu-accessibility-Menu-ac-1510f--box-has-an-accessible-name-mobile/test-failed-1.png
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+    Error Context: reports/artifacts/menu-accessibility-Menu-ac-1510f--box-has-an-accessible-name-mobile/error-context.md
+
+    attachment #3: trace (application/zip) ─────────────────────────────────────────────────────────
+    reports/artifacts/menu-accessibility-Menu-ac-1510f--box-has-an-accessible-name-mobile/trace.zip
+    Usage:
+
+        npx playwright show-trace reports/artifacts/menu-accessibility-Menu-ac-1510f--box-has-an-accessible-name-mobile/trace.zip
+
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+  2 flaky
+    [mobile] › tests/menu-accessibility.spec.ts:16:7 › Menu: accessibility › page has one h1 and headings are not skipped (h1 then h2) 
+    [mobile] › tests/menu-accessibility.spec.ts:35:7 › Menu: accessibility › search box has an accessible name 
+  17 skipped
+  167 passed (18.3m)

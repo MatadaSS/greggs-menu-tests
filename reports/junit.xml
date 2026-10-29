@@ -1,0 +1,704 @@
+<testsuites id="" name="" tests="186" failures="0" skipped="17" errors="0" time="1096.113537">
+<testsuite name="menu-accessibility.spec.ts" timestamp="2026-10-29T11:55:59.601Z" hostname="desktop" tests="7" failures="0" skipped="0" time="36.163" errors="0">
+<testcase name="Menu: accessibility › axe scan: no critical WCAG 2.1 A/AA violations (all violations attached to report)" classname="menu-accessibility.spec.ts" time="6.696">
+<properties>
+<property name="axe:serious" value="color-contrast: Elements must meet minimum color contrast ratio thresholds (1 nodes)">
+</property>
+</properties>
+</testcase>
+<testcase name="Menu: accessibility › page has one h1 and headings are not skipped (h1 then h2)" classname="menu-accessibility.spec.ts" time="5.166">
+</testcase>
+<testcase name="Menu: accessibility › search box and category tabs are reachable by keyboard" classname="menu-accessibility.spec.ts" time="5.106">
+</testcase>
+<testcase name="Menu: accessibility › search box has an accessible name" classname="menu-accessibility.spec.ts" time="5.103">
+</testcase>
+<testcase name="Menu: accessibility › axe scan of a product page: no critical violations" classname="menu-accessibility.spec.ts" time="2.481">
+<properties>
+<property name="axe:product-page:serious" value="color-contrast: Elements must meet minimum color contrast ratio thresholds (1 nodes)">
+</property>
+</properties>
+</testcase>
+<testcase name="Menu: accessibility › axe scan of the open filter dialog: no critical violations" classname="menu-accessibility.spec.ts" time="6.009">
+<properties>
+<property name="fail" value="Known defect: close button and calories slider have no accessible name/label">
+</property>
+<property name="axe:filter-dialog:critical" value="button-name: Buttons must have discernible text (1 nodes)">
+</property>
+<property name="axe:filter-dialog:serious" value="color-contrast: Elements must meet minimum color contrast ratio thresholds (6 nodes)">
+</property>
+<property name="axe:filter-dialog:critical" value="label: Form elements must have labels (1 nodes)">
+</property>
+</properties>
+<system-out>
+<![CDATA[
+[[ATTACHMENT|artifacts/menu-accessibility-Menu-ac-70b4b-alog-no-critical-violations-desktop/error-context.md]]
+]]>
+</system-out>
+</testcase>
+<testcase name="Menu: accessibility › filter dialog: focus moves into it and allergen options can be ticked with the keyboard" classname="menu-accessibility.spec.ts" time="5.602">
+</testcase>
+</testsuite>
+<testsuite name="menu-data.spec.ts" timestamp="2026-10-29T11:55:59.601Z" hostname="desktop" tests="11" failures="0" skipped="0" time="61.939" errors="0">
+<testcase name="Menu: data consistency › every product link has a name, a slug and a numeric id" classname="menu-data.spec.ts" time="5.073">
+</testcase>
+<testcase name="Menu: data consistency › no product appears twice within the same category" classname="menu-data.spec.ts" time="5.468">
+</testcase>
+<testcase name="Menu: data consistency › every product card has an image with alt text" classname="menu-data.spec.ts" time="5.571">
+</testcase>
+<testcase name="Menu: data consistency › card name matches the product page heading (sample of 5 products)" classname="menu-data.spec.ts" time="8.416">
+</testcase>
+<testcase name="Menu: data consistency › product page shows a nutrition table with energy in kcal" classname="menu-data.spec.ts" time="1.803">
+</testcase>
+<testcase name="Menu: data consistency › first product in &quot;BREAKFAST&quot; has a complete product page" classname="menu-data.spec.ts" time="6.455">
+</testcase>
+<testcase name="Menu: data consistency › first product in &quot;SAVOURIES &amp; BAKES&quot; has a complete product page" classname="menu-data.spec.ts" time="5.754">
+</testcase>
+<testcase name="Menu: data consistency › first product in &quot;DRINKS &amp; SNACKS&quot; has a complete product page" classname="menu-data.spec.ts" time="5.682">
+</testcase>
+<testcase name="Menu: data consistency › first product in &quot;SANDWICHES &amp; SALADS&quot; has a complete product page" classname="menu-data.spec.ts" time="6.145">
+</testcase>
+<testcase name="Menu: data consistency › first product in &quot;SWEET TREATS&quot; has a complete product page" classname="menu-data.spec.ts" time="5.822">
+</testcase>
+<testcase name="Menu: data consistency › first product in &quot;HOT FOOD&quot; has a complete product page" classname="menu-data.spec.ts" time="5.75">
+</testcase>
+</testsuite>
+<testsuite name="menu-filters.spec.ts" timestamp="2026-10-29T11:55:59.601Z" hostname="desktop" tests="9" failures="0" skipped="0" time="71.999" errors="0">
+<testcase name="Menu: filters (calories and allergens) › filter dialog opens and shows calories, all 11 allergens and categories" classname="menu-filters.spec.ts" time="5.992">
+</testcase>
+<testcase name="Menu: filters (calories and allergens) › dialog closes with Back, the close button and Escape" classname="menu-filters.spec.ts" time="7.653">
+</testcase>
+<testcase name="Menu: filters (calories and allergens) › an allergen filter reduces the list, shows a chip, and removing it restores everything" classname="menu-filters.spec.ts" time="6.441">
+</testcase>
+<testcase name="Menu: filters (calories and allergens) › DATA CORRECTNESS: with &quot;No Wheat&quot; applied, products really do not list Wheat (sample of 4)" classname="menu-filters.spec.ts" time="8.672">
+</testcase>
+<testcase name="Menu: filters (calories and allergens) › DATA CORRECTNESS: with &quot;No Eggs&quot; applied, products really do not list Eggs (sample of 4)" classname="menu-filters.spec.ts" time="9.52">
+</testcase>
+<testcase name="Menu: filters (calories and allergens) › combining two allergen filters never shows more products than one alone" classname="menu-filters.spec.ts" time="7.194">
+</testcase>
+<testcase name="Menu: filters (calories and allergens) › calorie slider narrows the list, and shown products are at or under the limit (sample of 3)" classname="menu-filters.spec.ts" time="7.72">
+</testcase>
+<testcase name="Menu: filters (calories and allergens) › selected filters are remembered when the dialog is reopened, and Clear all resets them" classname="menu-filters.spec.ts" time="7.165">
+</testcase>
+<testcase name="Menu: filters (calories and allergens) › DATA CONSISTENCY: category counts in the filter dialog match the real lists and add up to the total" classname="menu-filters.spec.ts" time="11.642">
+</testcase>
+</testsuite>
+<testsuite name="menu-header-nav.spec.ts" timestamp="2026-10-29T11:55:59.601Z" hostname="desktop" tests="4" failures="0" skipped="0" time="20.998" errors="0">
+<testcase name="Menu: header &quot;Menu &amp; allergens&quot; navigation › menu links list every category, View all products and Allergens &amp; Nutrition" classname="menu-header-nav.spec.ts" time="5.683">
+</testcase>
+<testcase name="Menu: header &quot;Menu &amp; allergens&quot; navigation › choosing a category from the header opens that category" classname="menu-header-nav.spec.ts" time="8.106">
+</testcase>
+<testcase name="Menu: header &quot;Menu &amp; allergens&quot; navigation › &quot;Allergens &amp; Nutrition&quot; page loads" classname="menu-header-nav.spec.ts" time="2.025">
+</testcase>
+<testcase name="Menu: header &quot;Menu &amp; allergens&quot; navigation › logo returns to the homepage from the menu" classname="menu-header-nav.spec.ts" time="5.184">
+</testcase>
+</testsuite>
+<testsuite name="menu-navigation.spec.ts" timestamp="2026-10-29T11:55:59.601Z" hostname="desktop" tests="11" failures="0" skipped="0" time="60.405" errors="0">
+<testcase name="Menu: categories and navigation › landing page shows heading, all 6 categories and products" classname="menu-navigation.spec.ts" time="5.166">
+</testcase>
+<testcase name="Menu: categories and navigation › category tab &quot;BREAKFAST&quot; filters the list and updates the URL" classname="menu-navigation.spec.ts" time="5.109">
+</testcase>
+<testcase name="Menu: categories and navigation › category tab &quot;SAVOURIES &amp; BAKES&quot; filters the list and updates the URL" classname="menu-navigation.spec.ts" time="5.451">
+</testcase>
+<testcase name="Menu: categories and navigation › category tab &quot;DRINKS &amp; SNACKS&quot; filters the list and updates the URL" classname="menu-navigation.spec.ts" time="5.348">
+</testcase>
+<testcase name="Menu: categories and navigation › category tab &quot;SANDWICHES &amp; SALADS&quot; filters the list and updates the URL" classname="menu-navigation.spec.ts" time="5.562">
+</testcase>
+<testcase name="Menu: categories and navigation › category tab &quot;SWEET TREATS&quot; filters the list and updates the URL" classname="menu-navigation.spec.ts" time="5.338">
+</testcase>
+<testcase name="Menu: categories and navigation › category tab &quot;HOT FOOD&quot; filters the list and updates the URL" classname="menu-navigation.spec.ts" time="5.17">
+</testcase>
+<testcase name="Menu: categories and navigation › deep link /menu?category=... opens that category directly" classname="menu-navigation.spec.ts" time="5.584">
+</testcase>
+<testcase name="Menu: categories and navigation › &quot;ALL&quot; tab restores every category after filtering" classname="menu-navigation.spec.ts" time="5.689">
+</testcase>
+<testcase name="Menu: categories and navigation › clicking a product opens its detail page, and Back returns to the menu" classname="menu-navigation.spec.ts" time="10.043">
+</testcase>
+<testcase name="Menu: categories and navigation › unknown product URL returns a 404 page" classname="menu-navigation.spec.ts" time="1.945">
+</testcase>
+</testsuite>
+<testsuite name="menu-performance.spec.ts" timestamp="2026-10-29T11:55:59.601Z" hostname="desktop" tests="4" failures="0" skipped="0" time="27.778" errors="0">
+<testcase name="Menu: performance › load time and Largest Contentful Paint are within budget" classname="menu-performance.spec.ts" time="6.719">
+<system-out>
+<![CDATA[[desktop] perf { domContentLoadedMs: [33m1304[39m, lcpMs: [33m1376[39m, cls: [33m0.017[39m }
+]]>
+</system-out>
+</testcase>
+<testcase name="Menu: performance › layout shift (CLS) is within budget" classname="menu-performance.spec.ts" time="7.024">
+<system-out>
+<![CDATA[[desktop] cls [33m0.017[39m
+]]>
+</system-out>
+</testcase>
+<testcase name="Menu: performance › no same-site requests fail (4xx/5xx) while loading the menu" classname="menu-performance.spec.ts" time="8.695">
+</testcase>
+<testcase name="Menu: performance › category filtering responds quickly (no full reload needed)" classname="menu-performance.spec.ts" time="5.34">
+</testcase>
+</testsuite>
+<testsuite name="menu-search.spec.ts" timestamp="2026-10-29T11:55:59.601Z" hostname="desktop" tests="4" failures="0" skipped="0" time="21.357" errors="0">
+<testcase name="Menu: search › typing a term narrows results to matching products" classname="menu-search.spec.ts" time="5.03">
+</testcase>
+<testcase name="Menu: search › search is case-insensitive" classname="menu-search.spec.ts" time="5.687">
+</testcase>
+<testcase name="Menu: search › a term with no matches shows a friendly empty state" classname="menu-search.spec.ts" time="5.265">
+</testcase>
+<testcase name="Menu: search › clearing the search brings the full menu back" classname="menu-search.spec.ts" time="5.375">
+</testcase>
+</testsuite>
+<testsuite name="menu-ui.spec.ts" timestamp="2026-10-29T11:55:59.601Z" hostname="desktop" tests="5" failures="0" skipped="0" time="36.502" errors="0">
+<testcase name="Menu: UI rendering and responsiveness › core elements are visible: search, filter and category tabs" classname="menu-ui.spec.ts" time="13.026">
+</testcase>
+<testcase name="Menu: UI rendering and responsiveness › page does not scroll sideways at this viewport" classname="menu-ui.spec.ts" time="5.304">
+</testcase>
+<testcase name="Menu: UI rendering and responsiveness › product images actually load (not broken)" classname="menu-ui.spec.ts" time="5.402">
+</testcase>
+<testcase name="Menu: UI rendering and responsiveness › product grid adapts to screen width (more columns on desktop than mobile)" classname="menu-ui.spec.ts" time="4.96">
+</testcase>
+<testcase name="Menu: UI rendering and responsiveness › cookie banner can be rejected and stays dismissed on reload" classname="menu-ui.spec.ts" time="7.81">
+</testcase>
+</testsuite>
+<testsuite name="negative-controls.spec.ts" timestamp="2026-10-29T11:55:59.601Z" hostname="desktop" tests="7" failures="0" skipped="0" time="55.647" errors="0">
+<testcase name="Negative controls: do our checks actually catch problems? › missing alt text WOULD be caught" classname="negative-controls.spec.ts" time="5.466">
+<properties>
+<property name="fail" value="">
+</property>
+</properties>
+<system-out>
+<![CDATA[
+[[ATTACHMENT|artifacts/negative-controls-Negative-d341b-ng-alt-text-WOULD-be-caught-desktop/error-context.md]]
+]]>
+</system-out>
+</testcase>
+<testcase name="Negative controls: do our checks actually catch problems? › broken product images WOULD be caught" classname="negative-controls.spec.ts" time="10.019">
+<properties>
+<property name="fail" value="">
+</property>
+</properties>
+<system-out>
+<![CDATA[
+[[ATTACHMENT|artifacts/negative-controls-Negative-5a11b-duct-images-WOULD-be-caught-desktop/error-context.md]]
+]]>
+</system-out>
+</testcase>
+<testcase name="Negative controls: do our checks actually catch problems? › a fake 200 on an unknown product URL WOULD be caught" classname="negative-controls.spec.ts" time="0.111">
+<properties>
+<property name="fail" value="">
+</property>
+</properties>
+<system-out>
+<![CDATA[
+[[ATTACHMENT|artifacts/negative-controls-Negative-41b25-product-URL-WOULD-be-caught-desktop/error-context.md]]
+]]>
+</system-out>
+</testcase>
+<testcase name="Negative controls: do our checks actually catch problems? › a product that lists the filtered allergen WOULD be caught" classname="negative-controls.spec.ts" time="8.489">
+<properties>
+<property name="fail" value="">
+</property>
+</properties>
+<system-out>
+<![CDATA[
+[[ATTACHMENT|artifacts/negative-controls-Negative-4a9c7-ed-allergen-WOULD-be-caught-desktop/error-context.md]]
+]]>
+</system-out>
+</testcase>
+<testcase name="Negative controls: do our checks actually catch problems? › a wrong category count in the filter dialog WOULD be caught" classname="negative-controls.spec.ts" time="6.361">
+<properties>
+<property name="fail" value="">
+</property>
+</properties>
+<system-out>
+<![CDATA[
+[[ATTACHMENT|artifacts/negative-controls-Negative-57d33-lter-dialog-WOULD-be-caught-desktop/error-context.md]]
+]]>
+</system-out>
+</testcase>
+<testcase name="Negative controls: do our checks actually catch problems? › search that ignores the term WOULD be caught" classname="negative-controls.spec.ts" time="5.035">
+<properties>
+<property name="fail" value="">
+</property>
+</properties>
+<system-out>
+<![CDATA[
+[[ATTACHMENT|artifacts/negative-controls-Negative-21ee3-es-the-term-WOULD-be-caught-desktop/error-context.md]]
+]]>
+</system-out>
+</testcase>
+<testcase name="Negative controls: do our checks actually catch problems? › a page that is too slow WOULD be caught by the performance budget" classname="negative-controls.spec.ts" time="20.166">
+<properties>
+<property name="fail" value="">
+</property>
+</properties>
+<system-out>
+<![CDATA[
+[[ATTACHMENT|artifacts/negative-controls-Negative-3deb8-t-by-the-performance-budget-desktop/error-context.md]]
+]]>
+</system-out>
+</testcase>
+</testsuite>
+<testsuite name="menu-accessibility.spec.ts" timestamp="2026-10-29T11:55:59.601Z" hostname="mobile" tests="7" failures="0" skipped="2" time="78.049" errors="0">
+<testcase name="Menu: accessibility › axe scan: no critical WCAG 2.1 A/AA violations (all violations attached to report)" classname="menu-accessibility.spec.ts" time="6.41">
+<properties>
+<property name="axe:serious" value="color-contrast: Elements must meet minimum color contrast ratio thresholds (1 nodes)">
+</property>
+</properties>
+</testcase>
+<testcase name="Menu: accessibility › page has one h1 and headings are not skipped (h1 then h2)" classname="menu-accessibility.spec.ts" time="21.882">
+<system-out>
+<![CDATA[
+[[ATTACHMENT|artifacts/menu-accessibility-Menu-ac-58760-are-not-skipped-h1-then-h2--mobile/test-failed-1.png]]
+
+[[ATTACHMENT|artifacts/menu-accessibility-Menu-ac-58760-are-not-skipped-h1-then-h2--mobile/error-context.md]]
+
+[[ATTACHMENT|artifacts/menu-accessibility-Menu-ac-58760-are-not-skipped-h1-then-h2--mobile/trace.zip]]
+]]>
+</system-out>
+</testcase>
+<testcase name="Menu: accessibility › search box and category tabs are reachable by keyboard" classname="menu-accessibility.spec.ts">
+<properties>
+<property name="skip" value="keyboard navigation is a desktop concern">
+</property>
+</properties>
+<skipped>
+</skipped>
+</testcase>
+<testcase name="Menu: accessibility › search box has an accessible name" classname="menu-accessibility.spec.ts" time="31.378">
+<system-out>
+<![CDATA[
+[[ATTACHMENT|artifacts/menu-accessibility-Menu-ac-1510f--box-has-an-accessible-name-mobile/test-failed-1.png]]
+
+[[ATTACHMENT|artifacts/menu-accessibility-Menu-ac-1510f--box-has-an-accessible-name-mobile/error-context.md]]
+
+[[ATTACHMENT|artifacts/menu-accessibility-Menu-ac-1510f--box-has-an-accessible-name-mobile/trace.zip]]
+]]>
+</system-out>
+</testcase>
+<testcase name="Menu: accessibility › axe scan of a product page: no critical violations" classname="menu-accessibility.spec.ts" time="2.416">
+<properties>
+<property name="axe:product-page:serious" value="color-contrast: Elements must meet minimum color contrast ratio thresholds (1 nodes)">
+</property>
+</properties>
+</testcase>
+<testcase name="Menu: accessibility › axe scan of the open filter dialog: no critical violations" classname="menu-accessibility.spec.ts" time="15.701">
+<properties>
+<property name="fail" value="Known defect: close button and calories slider have no accessible name/label">
+</property>
+</properties>
+<system-out>
+<![CDATA[
+[[ATTACHMENT|artifacts/menu-accessibility-Menu-ac-70b4b-alog-no-critical-violations-mobile/error-context.md]]
+]]>
+</system-out>
+</testcase>
+<testcase name="Menu: accessibility › filter dialog: focus moves into it and allergen options can be ticked with the keyboard" classname="menu-accessibility.spec.ts">
+<properties>
+<property name="skip" value="keyboard navigation is a desktop concern">
+</property>
+</properties>
+<skipped>
+</skipped>
+</testcase>
+</testsuite>
+<testsuite name="menu-data.spec.ts" timestamp="2026-10-29T11:55:59.601Z" hostname="mobile" tests="11" failures="0" skipped="0" time="61.416" errors="0">
+<testcase name="Menu: data consistency › every product link has a name, a slug and a numeric id" classname="menu-data.spec.ts" time="5.124">
+</testcase>
+<testcase name="Menu: data consistency › no product appears twice within the same category" classname="menu-data.spec.ts" time="5.025">
+</testcase>
+<testcase name="Menu: data consistency › every product card has an image with alt text" classname="menu-data.spec.ts" time="5.09">
+</testcase>
+<testcase name="Menu: data consistency › card name matches the product page heading (sample of 5 products)" classname="menu-data.spec.ts" time="7.733">
+</testcase>
+<testcase name="Menu: data consistency › product page shows a nutrition table with energy in kcal" classname="menu-data.spec.ts" time="1.731">
+</testcase>
+<testcase name="Menu: data consistency › first product in &quot;BREAKFAST&quot; has a complete product page" classname="menu-data.spec.ts" time="5.839">
+</testcase>
+<testcase name="Menu: data consistency › first product in &quot;SAVOURIES &amp; BAKES&quot; has a complete product page" classname="menu-data.spec.ts" time="5.683">
+</testcase>
+<testcase name="Menu: data consistency › first product in &quot;DRINKS &amp; SNACKS&quot; has a complete product page" classname="menu-data.spec.ts" time="6.147">
+</testcase>
+<testcase name="Menu: data consistency › first product in &quot;SANDWICHES &amp; SALADS&quot; has a complete product page" classname="menu-data.spec.ts" time="5.664">
+</testcase>
+<testcase name="Menu: data consistency › first product in &quot;SWEET TREATS&quot; has a complete product page" classname="menu-data.spec.ts" time="6.17">
+</testcase>
+<testcase name="Menu: data consistency › first product in &quot;HOT FOOD&quot; has a complete product page" classname="menu-data.spec.ts" time="7.21">
+</testcase>
+</testsuite>
+<testsuite name="menu-filters.spec.ts" timestamp="2026-10-29T11:55:59.601Z" hostname="mobile" tests="9" failures="0" skipped="1" time="68.886" errors="0">
+<testcase name="Menu: filters (calories and allergens) › filter dialog opens and shows calories, all 11 allergens and categories" classname="menu-filters.spec.ts" time="6.035">
+</testcase>
+<testcase name="Menu: filters (calories and allergens) › dialog closes with Back, the close button and Escape" classname="menu-filters.spec.ts">
+<properties>
+<property name="skip" value="Escape key is a desktop interaction">
+</property>
+</properties>
+<skipped>
+</skipped>
+</testcase>
+<testcase name="Menu: filters (calories and allergens) › an allergen filter reduces the list, shows a chip, and removing it restores everything" classname="menu-filters.spec.ts" time="6.366">
+</testcase>
+<testcase name="Menu: filters (calories and allergens) › DATA CORRECTNESS: with &quot;No Wheat&quot; applied, products really do not list Wheat (sample of 4)" classname="menu-filters.spec.ts" time="8.528">
+</testcase>
+<testcase name="Menu: filters (calories and allergens) › DATA CORRECTNESS: with &quot;No Eggs&quot; applied, products really do not list Eggs (sample of 4)" classname="menu-filters.spec.ts" time="7.646">
+</testcase>
+<testcase name="Menu: filters (calories and allergens) › combining two allergen filters never shows more products than one alone" classname="menu-filters.spec.ts" time="7.411">
+</testcase>
+<testcase name="Menu: filters (calories and allergens) › calorie slider narrows the list, and shown products are at or under the limit (sample of 3)" classname="menu-filters.spec.ts" time="7.44">
+</testcase>
+<testcase name="Menu: filters (calories and allergens) › selected filters are remembered when the dialog is reopened, and Clear all resets them" classname="menu-filters.spec.ts" time="7.728">
+</testcase>
+<testcase name="Menu: filters (calories and allergens) › DATA CONSISTENCY: category counts in the filter dialog match the real lists and add up to the total" classname="menu-filters.spec.ts" time="11.385">
+</testcase>
+</testsuite>
+<testsuite name="menu-header-nav.spec.ts" timestamp="2026-10-29T11:55:59.601Z" hostname="mobile" tests="4" failures="0" skipped="0" time="23.681" errors="0">
+<testcase name="Menu: header &quot;Menu &amp; allergens&quot; navigation › menu links list every category, View all products and Allergens &amp; Nutrition" classname="menu-header-nav.spec.ts" time="6.4">
+</testcase>
+<testcase name="Menu: header &quot;Menu &amp; allergens&quot; navigation › choosing a category from the header opens that category" classname="menu-header-nav.spec.ts" time="8.527">
+</testcase>
+<testcase name="Menu: header &quot;Menu &amp; allergens&quot; navigation › &quot;Allergens &amp; Nutrition&quot; page loads" classname="menu-header-nav.spec.ts" time="2.108">
+</testcase>
+<testcase name="Menu: header &quot;Menu &amp; allergens&quot; navigation › logo returns to the homepage from the menu" classname="menu-header-nav.spec.ts" time="6.646">
+</testcase>
+</testsuite>
+<testsuite name="menu-navigation.spec.ts" timestamp="2026-10-29T11:55:59.601Z" hostname="mobile" tests="11" failures="0" skipped="0" time="59.795" errors="0">
+<testcase name="Menu: categories and navigation › landing page shows heading, all 6 categories and products" classname="menu-navigation.spec.ts" time="5.803">
+</testcase>
+<testcase name="Menu: categories and navigation › category tab &quot;BREAKFAST&quot; filters the list and updates the URL" classname="menu-navigation.spec.ts" time="5.234">
+</testcase>
+<testcase name="Menu: categories and navigation › category tab &quot;SAVOURIES &amp; BAKES&quot; filters the list and updates the URL" classname="menu-navigation.spec.ts" time="6.031">
+</testcase>
+<testcase name="Menu: categories and navigation › category tab &quot;DRINKS &amp; SNACKS&quot; filters the list and updates the URL" classname="menu-navigation.spec.ts" time="5.217">
+</testcase>
+<testcase name="Menu: categories and navigation › category tab &quot;SANDWICHES &amp; SALADS&quot; filters the list and updates the URL" classname="menu-navigation.spec.ts" time="5.231">
+</testcase>
+<testcase name="Menu: categories and navigation › category tab &quot;SWEET TREATS&quot; filters the list and updates the URL" classname="menu-navigation.spec.ts" time="6.747">
+</testcase>
+<testcase name="Menu: categories and navigation › category tab &quot;HOT FOOD&quot; filters the list and updates the URL" classname="menu-navigation.spec.ts" time="5.912">
+</testcase>
+<testcase name="Menu: categories and navigation › deep link /menu?category=... opens that category directly" classname="menu-navigation.spec.ts" time="5.492">
+</testcase>
+<testcase name="Menu: categories and navigation › &quot;ALL&quot; tab restores every category after filtering" classname="menu-navigation.spec.ts" time="5.513">
+</testcase>
+<testcase name="Menu: categories and navigation › clicking a product opens its detail page, and Back returns to the menu" classname="menu-navigation.spec.ts" time="7.053">
+</testcase>
+<testcase name="Menu: categories and navigation › unknown product URL returns a 404 page" classname="menu-navigation.spec.ts" time="1.562">
+</testcase>
+</testsuite>
+<testsuite name="menu-performance.spec.ts" timestamp="2026-10-29T11:55:59.601Z" hostname="mobile" tests="4" failures="0" skipped="0" time="23.892" errors="0">
+<testcase name="Menu: performance › load time and Largest Contentful Paint are within budget" classname="menu-performance.spec.ts" time="6.666">
+<system-out>
+<![CDATA[[mobile] perf { domContentLoadedMs: [33m1246[39m, lcpMs: [33m652[39m, cls: [33m0.14[39m }
+]]>
+</system-out>
+</testcase>
+<testcase name="Menu: performance › layout shift (CLS) is within budget" classname="menu-performance.spec.ts" time="6.72">
+<system-out>
+<![CDATA[[mobile] cls [33m0.14[39m
+]]>
+</system-out>
+</testcase>
+<testcase name="Menu: performance › no same-site requests fail (4xx/5xx) while loading the menu" classname="menu-performance.spec.ts" time="5.428">
+</testcase>
+<testcase name="Menu: performance › category filtering responds quickly (no full reload needed)" classname="menu-performance.spec.ts" time="5.078">
+</testcase>
+</testsuite>
+<testsuite name="menu-search.spec.ts" timestamp="2026-10-29T11:55:59.601Z" hostname="mobile" tests="4" failures="0" skipped="0" time="21.167" errors="0">
+<testcase name="Menu: search › typing a term narrows results to matching products" classname="menu-search.spec.ts" time="5.078">
+</testcase>
+<testcase name="Menu: search › search is case-insensitive" classname="menu-search.spec.ts" time="5.589">
+</testcase>
+<testcase name="Menu: search › a term with no matches shows a friendly empty state" classname="menu-search.spec.ts" time="5.366">
+</testcase>
+<testcase name="Menu: search › clearing the search brings the full menu back" classname="menu-search.spec.ts" time="5.134">
+</testcase>
+</testsuite>
+<testsuite name="menu-ui.spec.ts" timestamp="2026-10-29T11:55:59.601Z" hostname="mobile" tests="5" failures="0" skipped="0" time="30.658" errors="0">
+<testcase name="Menu: UI rendering and responsiveness › core elements are visible: search, filter and category tabs" classname="menu-ui.spec.ts" time="6.421">
+</testcase>
+<testcase name="Menu: UI rendering and responsiveness › page does not scroll sideways at this viewport" classname="menu-ui.spec.ts" time="5.282">
+</testcase>
+<testcase name="Menu: UI rendering and responsiveness › product images actually load (not broken)" classname="menu-ui.spec.ts" time="6.046">
+</testcase>
+<testcase name="Menu: UI rendering and responsiveness › product grid adapts to screen width (more columns on desktop than mobile)" classname="menu-ui.spec.ts" time="5.317">
+</testcase>
+<testcase name="Menu: UI rendering and responsiveness › cookie banner can be rejected and stays dismissed on reload" classname="menu-ui.spec.ts" time="7.592">
+</testcase>
+</testsuite>
+<testsuite name="negative-controls.spec.ts" timestamp="2026-10-29T11:55:59.601Z" hostname="mobile" tests="7" failures="0" skipped="7" time="0" errors="0">
+<testcase name="Negative controls: do our checks actually catch problems? › missing alt text WOULD be caught" classname="negative-controls.spec.ts">
+<properties>
+<property name="skip" value="one viewport is enough to prove the checks have teeth">
+</property>
+</properties>
+<skipped>
+</skipped>
+</testcase>
+<testcase name="Negative controls: do our checks actually catch problems? › broken product images WOULD be caught" classname="negative-controls.spec.ts">
+<properties>
+<property name="skip" value="one viewport is enough to prove the checks have teeth">
+</property>
+</properties>
+<skipped>
+</skipped>
+</testcase>
+<testcase name="Negative controls: do our checks actually catch problems? › a fake 200 on an unknown product URL WOULD be caught" classname="negative-controls.spec.ts">
+<properties>
+<property name="skip" value="one viewport is enough to prove the checks have teeth">
+</property>
+</properties>
+<skipped>
+</skipped>
+</testcase>
+<testcase name="Negative controls: do our checks actually catch problems? › a product that lists the filtered allergen WOULD be caught" classname="negative-controls.spec.ts">
+<properties>
+<property name="skip" value="one viewport is enough to prove the checks have teeth">
+</property>
+</properties>
+<skipped>
+</skipped>
+</testcase>
+<testcase name="Negative controls: do our checks actually catch problems? › a wrong category count in the filter dialog WOULD be caught" classname="negative-controls.spec.ts">
+<properties>
+<property name="skip" value="one viewport is enough to prove the checks have teeth">
+</property>
+</properties>
+<skipped>
+</skipped>
+</testcase>
+<testcase name="Negative controls: do our checks actually catch problems? › search that ignores the term WOULD be caught" classname="negative-controls.spec.ts">
+<properties>
+<property name="skip" value="one viewport is enough to prove the checks have teeth">
+</property>
+</properties>
+<skipped>
+</skipped>
+</testcase>
+<testcase name="Negative controls: do our checks actually catch problems? › a page that is too slow WOULD be caught by the performance budget" classname="negative-controls.spec.ts">
+<properties>
+<property name="skip" value="one viewport is enough to prove the checks have teeth">
+</property>
+</properties>
+<skipped>
+</skipped>
+</testcase>
+</testsuite>
+<testsuite name="menu-accessibility.spec.ts" timestamp="2026-10-29T11:55:59.601Z" hostname="tablet" tests="7" failures="0" skipped="0" time="35.669" errors="0">
+<testcase name="Menu: accessibility › axe scan: no critical WCAG 2.1 A/AA violations (all violations attached to report)" classname="menu-accessibility.spec.ts" time="6.024">
+<properties>
+<property name="axe:serious" value="color-contrast: Elements must meet minimum color contrast ratio thresholds (1 nodes)">
+</property>
+</properties>
+</testcase>
+<testcase name="Menu: accessibility › page has one h1 and headings are not skipped (h1 then h2)" classname="menu-accessibility.spec.ts" time="5.014">
+</testcase>
+<testcase name="Menu: accessibility › search box and category tabs are reachable by keyboard" classname="menu-accessibility.spec.ts" time="5.066">
+</testcase>
+<testcase name="Menu: accessibility › search box has an accessible name" classname="menu-accessibility.spec.ts" time="5.272">
+</testcase>
+<testcase name="Menu: accessibility › axe scan of a product page: no critical violations" classname="menu-accessibility.spec.ts" time="2.412">
+<properties>
+<property name="axe:product-page:serious" value="color-contrast: Elements must meet minimum color contrast ratio thresholds (1 nodes)">
+</property>
+</properties>
+</testcase>
+<testcase name="Menu: accessibility › axe scan of the open filter dialog: no critical violations" classname="menu-accessibility.spec.ts" time="6.348">
+<properties>
+<property name="fail" value="Known defect: close button and calories slider have no accessible name/label">
+</property>
+<property name="axe:filter-dialog:critical" value="button-name: Buttons must have discernible text (1 nodes)">
+</property>
+<property name="axe:filter-dialog:serious" value="color-contrast: Elements must meet minimum color contrast ratio thresholds (6 nodes)">
+</property>
+<property name="axe:filter-dialog:critical" value="label: Form elements must have labels (1 nodes)">
+</property>
+</properties>
+<system-out>
+<![CDATA[
+[[ATTACHMENT|artifacts/menu-accessibility-Menu-ac-70b4b-alog-no-critical-violations-tablet/error-context.md]]
+]]>
+</system-out>
+</testcase>
+<testcase name="Menu: accessibility › filter dialog: focus moves into it and allergen options can be ticked with the keyboard" classname="menu-accessibility.spec.ts" time="5.533">
+</testcase>
+</testsuite>
+<testsuite name="menu-data.spec.ts" timestamp="2026-10-29T11:55:59.601Z" hostname="tablet" tests="11" failures="0" skipped="0" time="66.52" errors="0">
+<testcase name="Menu: data consistency › every product link has a name, a slug and a numeric id" classname="menu-data.spec.ts" time="8.81">
+</testcase>
+<testcase name="Menu: data consistency › no product appears twice within the same category" classname="menu-data.spec.ts" time="5.477">
+</testcase>
+<testcase name="Menu: data consistency › every product card has an image with alt text" classname="menu-data.spec.ts" time="5.096">
+</testcase>
+<testcase name="Menu: data consistency › card name matches the product page heading (sample of 5 products)" classname="menu-data.spec.ts" time="7.949">
+</testcase>
+<testcase name="Menu: data consistency › product page shows a nutrition table with energy in kcal" classname="menu-data.spec.ts" time="1.618">
+</testcase>
+<testcase name="Menu: data consistency › first product in &quot;BREAKFAST&quot; has a complete product page" classname="menu-data.spec.ts" time="7.568">
+</testcase>
+<testcase name="Menu: data consistency › first product in &quot;SAVOURIES &amp; BAKES&quot; has a complete product page" classname="menu-data.spec.ts" time="5.735">
+</testcase>
+<testcase name="Menu: data consistency › first product in &quot;DRINKS &amp; SNACKS&quot; has a complete product page" classname="menu-data.spec.ts" time="5.491">
+</testcase>
+<testcase name="Menu: data consistency › first product in &quot;SANDWICHES &amp; SALADS&quot; has a complete product page" classname="menu-data.spec.ts" time="5.996">
+</testcase>
+<testcase name="Menu: data consistency › first product in &quot;SWEET TREATS&quot; has a complete product page" classname="menu-data.spec.ts" time="6.401">
+</testcase>
+<testcase name="Menu: data consistency › first product in &quot;HOT FOOD&quot; has a complete product page" classname="menu-data.spec.ts" time="6.379">
+</testcase>
+</testsuite>
+<testsuite name="menu-filters.spec.ts" timestamp="2026-10-29T11:55:59.601Z" hostname="tablet" tests="9" failures="0" skipped="0" time="71.652" errors="0">
+<testcase name="Menu: filters (calories and allergens) › filter dialog opens and shows calories, all 11 allergens and categories" classname="menu-filters.spec.ts" time="5.784">
+</testcase>
+<testcase name="Menu: filters (calories and allergens) › dialog closes with Back, the close button and Escape" classname="menu-filters.spec.ts" time="8.772">
+</testcase>
+<testcase name="Menu: filters (calories and allergens) › an allergen filter reduces the list, shows a chip, and removing it restores everything" classname="menu-filters.spec.ts" time="6.915">
+</testcase>
+<testcase name="Menu: filters (calories and allergens) › DATA CORRECTNESS: with &quot;No Wheat&quot; applied, products really do not list Wheat (sample of 4)" classname="menu-filters.spec.ts" time="8.405">
+</testcase>
+<testcase name="Menu: filters (calories and allergens) › DATA CORRECTNESS: with &quot;No Eggs&quot; applied, products really do not list Eggs (sample of 4)" classname="menu-filters.spec.ts" time="8.59">
+</testcase>
+<testcase name="Menu: filters (calories and allergens) › combining two allergen filters never shows more products than one alone" classname="menu-filters.spec.ts" time="7.369">
+</testcase>
+<testcase name="Menu: filters (calories and allergens) › calorie slider narrows the list, and shown products are at or under the limit (sample of 3)" classname="menu-filters.spec.ts" time="7.813">
+</testcase>
+<testcase name="Menu: filters (calories and allergens) › selected filters are remembered when the dialog is reopened, and Clear all resets them" classname="menu-filters.spec.ts" time="6.962">
+</testcase>
+<testcase name="Menu: filters (calories and allergens) › DATA CONSISTENCY: category counts in the filter dialog match the real lists and add up to the total" classname="menu-filters.spec.ts" time="11.042">
+</testcase>
+</testsuite>
+<testsuite name="menu-header-nav.spec.ts" timestamp="2026-10-29T11:55:59.601Z" hostname="tablet" tests="4" failures="0" skipped="0" time="21.638" errors="0">
+<testcase name="Menu: header &quot;Menu &amp; allergens&quot; navigation › menu links list every category, View all products and Allergens &amp; Nutrition" classname="menu-header-nav.spec.ts" time="5.684">
+</testcase>
+<testcase name="Menu: header &quot;Menu &amp; allergens&quot; navigation › choosing a category from the header opens that category" classname="menu-header-nav.spec.ts" time="8.291">
+</testcase>
+<testcase name="Menu: header &quot;Menu &amp; allergens&quot; navigation › &quot;Allergens &amp; Nutrition&quot; page loads" classname="menu-header-nav.spec.ts" time="1.653">
+</testcase>
+<testcase name="Menu: header &quot;Menu &amp; allergens&quot; navigation › logo returns to the homepage from the menu" classname="menu-header-nav.spec.ts" time="6.01">
+</testcase>
+</testsuite>
+<testsuite name="menu-navigation.spec.ts" timestamp="2026-10-29T11:55:59.601Z" hostname="tablet" tests="11" failures="0" skipped="0" time="58.3" errors="0">
+<testcase name="Menu: categories and navigation › landing page shows heading, all 6 categories and products" classname="menu-navigation.spec.ts" time="5.183">
+</testcase>
+<testcase name="Menu: categories and navigation › category tab &quot;BREAKFAST&quot; filters the list and updates the URL" classname="menu-navigation.spec.ts" time="5.437">
+</testcase>
+<testcase name="Menu: categories and navigation › category tab &quot;SAVOURIES &amp; BAKES&quot; filters the list and updates the URL" classname="menu-navigation.spec.ts" time="5.311">
+</testcase>
+<testcase name="Menu: categories and navigation › category tab &quot;DRINKS &amp; SNACKS&quot; filters the list and updates the URL" classname="menu-navigation.spec.ts" time="6.282">
+</testcase>
+<testcase name="Menu: categories and navigation › category tab &quot;SANDWICHES &amp; SALADS&quot; filters the list and updates the URL" classname="menu-navigation.spec.ts" time="5.496">
+</testcase>
+<testcase name="Menu: categories and navigation › category tab &quot;SWEET TREATS&quot; filters the list and updates the URL" classname="menu-navigation.spec.ts" time="5.568">
+</testcase>
+<testcase name="Menu: categories and navigation › category tab &quot;HOT FOOD&quot; filters the list and updates the URL" classname="menu-navigation.spec.ts" time="5.377">
+</testcase>
+<testcase name="Menu: categories and navigation › deep link /menu?category=... opens that category directly" classname="menu-navigation.spec.ts" time="5.404">
+</testcase>
+<testcase name="Menu: categories and navigation › &quot;ALL&quot; tab restores every category after filtering" classname="menu-navigation.spec.ts" time="5.822">
+</testcase>
+<testcase name="Menu: categories and navigation › clicking a product opens its detail page, and Back returns to the menu" classname="menu-navigation.spec.ts" time="6.984">
+</testcase>
+<testcase name="Menu: categories and navigation › unknown product URL returns a 404 page" classname="menu-navigation.spec.ts" time="1.436">
+</testcase>
+</testsuite>
+<testsuite name="menu-performance.spec.ts" timestamp="2026-10-29T11:55:59.601Z" hostname="tablet" tests="4" failures="0" skipped="0" time="23.446" errors="0">
+<testcase name="Menu: performance › load time and Largest Contentful Paint are within budget" classname="menu-performance.spec.ts" time="6.2">
+<system-out>
+<![CDATA[[tablet] perf { domContentLoadedMs: [33m863[39m, lcpMs: [33m932[39m, cls: [33m0.386[39m }
+]]>
+</system-out>
+</testcase>
+<testcase name="Menu: performance › layout shift (CLS) is within budget" classname="menu-performance.spec.ts" time="7.013">
+<properties>
+<property name="fail" value="Known defect: CLS about 0.39 at tablet width">
+</property>
+</properties>
+<system-out>
+<![CDATA[[tablet] cls [33m0.386[39m
+
+[[ATTACHMENT|artifacts/menu-performance-Menu-perf-f776c--shift-CLS-is-within-budget-tablet/error-context.md]]
+]]>
+</system-out>
+</testcase>
+<testcase name="Menu: performance › no same-site requests fail (4xx/5xx) while loading the menu" classname="menu-performance.spec.ts" time="5.232">
+</testcase>
+<testcase name="Menu: performance › category filtering responds quickly (no full reload needed)" classname="menu-performance.spec.ts" time="5.001">
+</testcase>
+</testsuite>
+<testsuite name="menu-search.spec.ts" timestamp="2026-10-29T11:55:59.601Z" hostname="tablet" tests="4" failures="0" skipped="0" time="20.317" errors="0">
+<testcase name="Menu: search › typing a term narrows results to matching products" classname="menu-search.spec.ts" time="5.162">
+</testcase>
+<testcase name="Menu: search › search is case-insensitive" classname="menu-search.spec.ts" time="5.047">
+</testcase>
+<testcase name="Menu: search › a term with no matches shows a friendly empty state" classname="menu-search.spec.ts" time="5.127">
+</testcase>
+<testcase name="Menu: search › clearing the search brings the full menu back" classname="menu-search.spec.ts" time="4.981">
+</testcase>
+</testsuite>
+<testsuite name="menu-ui.spec.ts" timestamp="2026-10-29T11:55:59.601Z" hostname="tablet" tests="5" failures="0" skipped="0" time="29.368" errors="0">
+<testcase name="Menu: UI rendering and responsiveness › core elements are visible: search, filter and category tabs" classname="menu-ui.spec.ts" time="5.635">
+</testcase>
+<testcase name="Menu: UI rendering and responsiveness › page does not scroll sideways at this viewport" classname="menu-ui.spec.ts" time="5.102">
+</testcase>
+<testcase name="Menu: UI rendering and responsiveness › product images actually load (not broken)" classname="menu-ui.spec.ts" time="5.297">
+</testcase>
+<testcase name="Menu: UI rendering and responsiveness › product grid adapts to screen width (more columns on desktop than mobile)" classname="menu-ui.spec.ts" time="5.256">
+</testcase>
+<testcase name="Menu: UI rendering and responsiveness › cookie banner can be rejected and stays dismissed on reload" classname="menu-ui.spec.ts" time="8.078">
+</testcase>
+</testsuite>
+<testsuite name="negative-controls.spec.ts" timestamp="2026-10-29T11:55:59.601Z" hostname="tablet" tests="7" failures="0" skipped="7" time="0" errors="0">
+<testcase name="Negative controls: do our checks actually catch problems? › missing alt text WOULD be caught" classname="negative-controls.spec.ts">
+<properties>
+<property name="skip" value="one viewport is enough to prove the checks have teeth">
+</property>
+</properties>
+<skipped>
+</skipped>
+</testcase>
+<testcase name="Negative controls: do our checks actually catch problems? › broken product images WOULD be caught" classname="negative-controls.spec.ts">
+<properties>
+<property name="skip" value="one viewport is enough to prove the checks have teeth">
+</property>
+</properties>
+<skipped>
+</skipped>
+</testcase>
+<testcase name="Negative controls: do our checks actually catch problems? › a fake 200 on an unknown product URL WOULD be caught" classname="negative-controls.spec.ts">
+<properties>
+<property name="skip" value="one viewport is enough to prove the checks have teeth">
+</property>
+</properties>
+<skipped>
+</skipped>
+</testcase>
+<testcase name="Negative controls: do our checks actually catch problems? › a product that lists the filtered allergen WOULD be caught" classname="negative-controls.spec.ts">
+<properties>
+<property name="skip" value="one viewport is enough to prove the checks have teeth">
+</property>
+</properties>
+<skipped>
+</skipped>
+</testcase>
+<testcase name="Negative controls: do our checks actually catch problems? › a wrong category count in the filter dialog WOULD be caught" classname="negative-controls.spec.ts">
+<properties>
+<property name="skip" value="one viewport is enough to prove the checks have teeth">
+</property>
+</properties>
+<skipped>
+</skipped>
+</testcase>
+<testcase name="Negative controls: do our checks actually catch problems? › search that ignores the term WOULD be caught" classname="negative-controls.spec.ts">
+<properties>
+<property name="skip" value="one viewport is enough to prove the checks have teeth">
+</property>
+</properties>
+<skipped>
+</skipped>
+</testcase>
+<testcase name="Negative controls: do our checks actually catch problems? › a page that is too slow WOULD be caught by the performance budget" classname="negative-controls.spec.ts">
+<properties>
+<property name="skip" value="one viewport is enough to prove the checks have teeth">
+</property>
+</properties>
+<skipped>
+</skipped>
+</testcase>
+</testsuite>
+</testsuites>
